@@ -7,7 +7,9 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image} from 'react-native';
+
+import LostsOfStyles from './offical-study/losts-of-styles';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -17,11 +19,25 @@ const instructions = Platform.select({
 });
 
 type Props = {};
+// 第一次渲染时候的使用
+function FirstRender(props) {
+  let pic = {
+    uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
+  };
+  return (
+    <View style={styles.container}>
+      <Text>First React Native</Text>
+      <Image source={pic} style={{width: 193, height: 110}}></Image>
+    </View>
+  );
+}
+
 export default class App extends Component<Props> {
   render() {
     return (
       <View>
-        <Text>First React Native</Text>
+        {/* <FirstRender></FirstRender> */}
+        <LostsOfStyles></LostsOfStyles>
       </View>
     );
   }
