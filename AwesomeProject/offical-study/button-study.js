@@ -128,8 +128,8 @@ export default class ButtonStudy extends Component {
         return (
             <View style={{ flex: 1 }}>
                 {/* <ButtonBasics></ButtonBasics> */}
-                <ButtonBasics2></ButtonBasics2>
-                {/* <Touchables></Touchables> */}
+                {/* <ButtonBasics2></ButtonBasics2> */}
+                <Touchables></Touchables>
             </View>
         )
     }

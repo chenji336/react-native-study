@@ -15,6 +15,14 @@ import FlexBox from './offical-study/flex-box';
 import TextInputTraslate from './offical-study/input';
 import ImageVar from './offical-study/image';
 import ButtonStudy from './offical-study/button-study';
+import IScrolledDownAndWhatHappenedNextShockedMe from './offical-study/scroll-view';
+import FlatListStudy from './offical-study/flat-list';
+import FetchStudy from './offical-study/fetch-study';
+import PlatFormStudy from './offical-study/platform-study';
+import NavigatorIOSApp from './offical-study/navigator/navigator-ios'
+import AnimationStudy from './offical-study/animation'
+
+import NavigationStudy from './offical-study/react-navigation';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -37,22 +45,31 @@ type Props = {};
 //   );
 // }
 
-export default class App extends Component<Props> {
-  render() {
-    return (
-      // 最外层的flex:1代表着height: 100%(子组件的flex: 1是按照父组件的高度来的)
-      <SafeAreaView style={{flex: 1}}>
-        {/* <FirstRender></FirstRender> */}
-        {/* <LostsOfStyles></LostsOfStyles> */}
-        {/* <FixedDimensionsBasic></FixedDimensionsBasic> */}
-        {/* <FlexBox></FlexBox> */}
-        {/* <TextInputTraslate></TextInputTraslate> */}
-        {/* <ImageVar></ImageVar> */}
-        <ButtonStudy></ButtonStudy>
-      </SafeAreaView>
-    );
-  }
-}
+// export default class App extends Component<Props> {
+//   render() {
+//     return (
+//       // 最外层的flex:1代表着height: 100%(子组件的flex: 1是按照父组件的高度来的)
+//       <SafeAreaView style={{flex: 1}}>
+//         {/* <FirstRender></FirstRender> */}
+//         {/* <LostsOfStyles></LostsOfStyles> */}
+//         {/* <FixedDimensionsBasic></FixedDimensionsBasic> */}
+//         {/* <FlexBox></FlexBox> */}
+//         {/* <TextInputTraslate></TextInputTraslate> */}
+//         {/* <ImageVar></ImageVar> */}
+//         {/* <ButtonStudy></ButtonStudy> */}
+//         {/* <IScrolledDownAndWhatHappenedNextShockedMe></IScrolledDownAndWhatHappenedNextShockedMe> */}
+//         {/* <FlatListStudy></FlatListStudy> */}
+//         {/* <FetchStudy></FetchStudy> */}
+//         {/* <PlatFormStudy></PlatFormStudy> */}
+//         {/* <NavigatorIOSApp></NavigatorIOSApp> */}
+//         <AnimationStudy></AnimationStudy>
+//       </SafeAreaView>
+//     );
+//   }
+// }
+
+// 路由导航已经是一个组件了
+export default NavigationStudy;
 
 const styles = StyleSheet.create({
   container: {
